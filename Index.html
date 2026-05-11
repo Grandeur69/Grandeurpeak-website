@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandeur Peak Global Advisors | Official Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            background: #fafafa;
+        }
+
+        header { 
+            background: linear-gradient(135deg, #003366, #004d99); 
+            color: white; 
+            padding: 3rem 1rem; 
+            text-align: center; 
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav { 
+            background: white; 
+            padding: 15px; 
+            text-align: center; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #003366;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #004d99;
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section { 
+            padding: 60px 20px; 
+            border-bottom: 1px solid #e0e0e0; 
+        }
+
+        section h2 {
+            color: #003366;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            max-width: 700px;
+            margin: 20px auto;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .fund-list { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .fund-card { 
+            border: 1px solid #ddd; 
+            padding: 25px; 
+            border-radius: 8px; 
+            width: 300px; 
+            background: white;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fund-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            transform: translateY(-5px);
+            border-color: #003366;
+        }
+
+        .fund-card h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .fund-card p {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #1ebe5a;
+            transform: translateY(-2px);
+        }
+
+        .cta-section {
+            text-align: center;
+            background: #003366;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: 0.2s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 0.95rem;
+            }
+            
+            .fund-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grandeur Peak Global Advisors</h1>
+    <p>Global Micro-to-Mid-Cap Specialists</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#strategies">Strategies</a>
+    <a href="#funds">Mutual Funds</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>Our Philosophy</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
+            We take a bottom-up approach to investing, using disciplined global screening and rigorous company due diligence. 
+            Our framework focuses on three pillars:
+        </p>
+        <ul>
+            <li><strong>Quality:</strong> Best-in-class growth companies with strong management and competitive advantages.</li>
+            <li><strong>Value:</strong> Attractive valuations relative to long-term potential and cash flow generation.</li>
+            <li><strong>Momentum:</strong> Positive business trajectory and accelerating fundamentals.</li>
+        </ul>
+    </section>
+
+    <section id="strategies">
+        <h2>Investment Strategies</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+            We focus on finding high-quality, underfollowed companies outside the large-cap spotlight. 
+            Our research process combines quantitative screening with deep fundamental analysis to identify long-term winners.
+        </p>
+    </section>
+
+    <section id="funds">
+        <h2>Our Mutual Funds</h2>
+        <div class="fund-list">
+            <div class="fund-card">
+                <h3>Global Reach Fund</h3>
+                <p>Focuses on micro-to-small cap companies in at least 10 countries. Diversified global exposure with growth focus.</p>
+                <a href="https://wa.me/2348120985577?text=Hi%20Grandeur%20Peak%2C%20I'm%20interested%20in%20the%20Global%20Reach%20Fund" 
+                   target="_blank" 
+                   class="whatsapp-btn">Chat on WhatsApp</a>
+            </div>
+            
+            <div class="fund-card">
+                <h3>International Stalwarts</h3>
+                <p>Invests primarily in non-U.S. small-to-midcap companies with proven business models and strong balance sheets.</p>
+                <a href="https://wa.me/2348120985577?text=Hi%20Grandeur%20Peak%2C%20I'm%20interested%20in%20International%20Stalwarts" 
+                   target="_blank" 
+                   class="whatsapp-btn">Chat on WhatsApp</a>
+            </div>
+            
+            <div class="fund-card">
+                <h3>Emerging Markets</h3>
+                <p>Seeks capital growth in diversified emerging market economies with high growth potential and improving governance.</p>
+                <a href="https://wa.me/2348120985577?text=Hi%20Grandeur%20Peak%2C%20I'm%20interested%20in%20Emerging%20Markets%20Fund" 
+                   target="_blank" 
+                   class="whatsapp-btn">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p style="margin: 20px 0; font-size: 1.1rem;">Message us directly on WhatsApp for fast support and investment details.</p>
+        <a href="https://wa.me/2348120985577?text=Hi%20Grandeur%20Peak%2C%20I%20want%20to%20get%20started" 
+           target="_blank" 
+           class="whatsapp-btn" 
+           style="font-size: 18px; padding: 15px 35px;">
+           Message Us on WhatsApp
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>Contact us on <a href="https://wa.me/2348120985577">WhatsApp: +234 812 098 5577</a></p>
+    <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">© 2026 Grandeur Peak Global Advisors. All rights reserved.</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2348120985577?text=Hi%20Grandeur%20Peak%2C%20I%20have%20a%20question" 
+   target="_blank" 
+   class="whatsapp-float">💬</a>
+
+</body>
+</html>
