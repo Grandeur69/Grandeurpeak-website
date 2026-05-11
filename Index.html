@@ -10,8 +10,8 @@
     nav { background: #1a1a1a; padding: 1rem; border-bottom: 1px solid #333; }
     nav a { color: #e0e0e0; text-decoration: none; margin-right: 1.5rem; }
     nav a:hover { color: #4dabf7; }
-    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h1, h2 { margin-bottom: 1rem; color: #fff; }
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h1, h2, h3 { margin-bottom: 1rem; color: #fff; }
     .card { background: #1a1a1a; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border: 1px solid #333; }
     .address-box { background: #000; padding: 1rem; border-radius: 4px; font-family: monospace; word-break: break-all; border: 1px solid #4dabf7; font-size: 0.95rem; }
     .btn { display: inline-block; background: #4dabf7; color: #000; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; margin-top: 1rem; font-weight: 600; cursor: pointer; border: none; }
@@ -19,6 +19,13 @@
     .disclaimer { font-size: 0.85rem; color: #888; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #333; }
     .warning { color: #ff6b6b; font-weight: 600; }
     .network-badge { display: inline-block; background: #2a2a2a; color: #4dabf7; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 0.5rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #333; }
+    th { color: #4dabf7; font-weight: 600; }
+    .profit { color: #4ade80; }
+    .loss { color: #ff6b6b; }
+    .tx-link { color: #4dabf7; text-decoration: none; }
+    .tx-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -30,6 +37,7 @@
   
   <div class="container">
     <h1>Grandeur Peak Investments</h1>
+    
     <div class="card">
       <h2>How It Works</h2>
       <p>Send USDT to the address below. I handle trades and share updates. No minimum, no lock-in.</p>
@@ -44,8 +52,41 @@
       <button class="btn" onclick="navigator.clipboard.writeText('TJXgScR2uBESqWPZ46dygEbuzcFpw37WGA')">Copy Address</button>
     </div>
 
+    <div class="card">
+      <h2>Proof of Trades</h2>
+      <p>Recent trades with transaction links. Update this table after each trade.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Pair</th>
+            <th>Type</th>
+            <th>Result</th>
+            <th>Tx Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-05-10</td>
+            <td>BTC/USDT</td>
+            <td>Long</td>
+            <td class="profit">+2.4%</td>
+            <td><a href="#" class="tx-link">View Tx</a></td>
+          </tr>
+          <tr>
+            <td>2026-05-09</td>
+            <td>ETH/USDT</td>
+            <td>Short</td>
+            <td class="loss">-1.1%</td>
+            <td><a href="#" class="tx-link">View Tx</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><small>Replace these rows with your actual trades. Link to Tronscan for verification.</small></p>
+    </div>
+
     <div class="disclaimer">
-      <p><strong>Disclaimer:</strong> This is not financial advice. Crypto trading is volatile and unregulated. Past performance does not guarantee future results. You are responsible for your own decisions.</p>
+      <p><strong>Disclaimer:</strong> This is not financial advice. Crypto trading is volatile and unregulated. Past performance does not guarantee future results.</p>
     </div>
   </div>
 </body>
