@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grandeur Peak - About</title>
+  <title>About - Grandeur Peak</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
-    nav { background: #1a1a1a; padding: 1rem; }
-    nav a { color: white; text-decoration: none; margin-right: 1.5rem; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #e0e0e0; background: #0a0a0a; }
+    nav { background: #1a1a1a; padding: 1rem; border-bottom: 1px solid #333; }
+    nav a { color: #e0e0e0; text-decoration: none; margin-right: 1.5rem; }
     nav a:hover { color: #4dabf7; }
     .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    h1 { margin-bottom: 1rem; }
+    h1, h2 { margin-bottom: 1rem; color: #fff; }
+    .card { background: #1a1a1a; padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border: 1px solid #333; }
+    .warning { color: #ff6b6b; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -22,9 +24,17 @@
   </nav>
   
   <div class="container">
-    <h1>About Us</h1>
-    <p>Replace this with your story, mission, or whatever you want people to know.</p>
-    <p>You can add images, lists, and more HTML here.</p>
+    <h1>About Grandeur Peak</h1>
+    <div class="card">
+      <h2>What I Do</h2>
+      <p>Replace this with your actual trading method. Example: Spot trading on BTC, ETH, SOL. Technical analysis, scalping, swing trading.</p>
+      <p>Be specific. "I trade crypto" isn’t enough for people to trust you.</p>
+    </div>
+    <div class="card">
+      <h2>Risk Disclosure</h2>
+      <p class="warning">Trading crypto involves substantial risk of loss. Never invest more than you can afford to lose.</p>
+      <p>I am not a licensed financial advisor. This is not financial advice.</p>
+    </div>
   </div>
 </body>
 </html>
